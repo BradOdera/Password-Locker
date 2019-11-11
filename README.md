@@ -6,7 +6,7 @@ This is a command line app that generates accounts.
 ## Setup/Installation Requirements
 * Internet connection.
 * Install pip
-* Clone the repo
+* Clone the repo using this url https://github.com/BradOdera/Password-Locker.git
 * No web dependencies needed.
 * Run in terminal
 ## Known Bugs

@@ -25,10 +25,10 @@ class User:
         '''
         User.user_details.append(self)
 
-    # @classmethod
-    # def user_detail(cls):
-    #     '''
-    #     returns the user details
-    #     '''
+    @classmethod
+    def user_detail(cls):
+        '''
+        returns the user details
+        '''
 
-    #     return cls.user_details
+        return cls.user_details

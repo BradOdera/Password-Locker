@@ -61,10 +61,10 @@ def generate_password():
 
 
 def main():
-    print("")
+    print(" ")
     print("Welcome to Pass Lock.")
     while True:
-        print("")
+        print(" ")
         print("-"*60)
         print(
             "Use these codes to navigate: \n ca-Create an Account \n li-Log In \n ex-Exit")
@@ -74,17 +74,17 @@ def main():
 
         elif short_code == 'ca':
             print("-"*60)
-            print("")
+            print(" ")
             print("To create a new account:")
             username = input("Enter your username - ").strip()
             password = input("Enter your password - ").strip()
-            save_user()
+            save_user('user')
             print(" ")
             print(
                 f"New Account Created for: {username} using password: {password}")
         elif short_code == 'li':
             print("-"*60)
-            print(' ')
+            print(" ")
             print("Enter your account details:")
             username = input("Enter your username - ").strip()
             password = str(input("Enter your password - "))
@@ -100,12 +100,12 @@ def main():
                     print(f'logging out {username}')
                     break
                 elif short_code == 'cc':
-                    print(' ')
+                    print(" ")
                     print("Enter your credentials:")
                     account = input("Enter account\'s name- ").strip()
                     username = input("Enter username - ").strip()
                     while True:
-                        print(' ')
+                        print(" ")
                         print("-"*60)
                         print(
                             "choose an option to enter password: \n ep-enter existing password \n gp-generate a password \n ex-exit")
@@ -123,31 +123,31 @@ def main():
                         else:
                             print("Wrong option entered. Try again.")
                     save_credentials('self')
-                    print(' ')
+                    print(" ")
                     print(
                         f"Credentials Created: Account: {account} - Username: {username} - Password: {password}")
-                    print(' ')
+                    print(" ")
                 elif short_code == 'dc':
-                    print(' ')
+                    print(" ")
                     if display_credentials('username'):
                         print("Credentials.")
-                        print(' ')
+                        print(" ")
                         for credential in display_credentials('username'):
                             print(
                                 f"Account: {credential.account} - Username: {credential.username} - Password: {credential.password}")
-                        print(' ')
+                        print(" ")
                     else:
-                        print(' ')
+                        print(" ")
                         print("Your credentials have not been saved yet")
-                        print(' ')
+                        print(" ")
 
         else:
-            print(' ')
+            print(" ")
             print(" Wrong details entered. Try again or Create an Account.")
 
     else:
         print("-"*60)
-        print(' ')
+        print(" ")
         print("Wrong option entered. Try again.")
 
 

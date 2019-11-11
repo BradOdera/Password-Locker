@@ -47,7 +47,7 @@ class Tests(unittest.TestCase):
         '''
 
         self.new_credentials.save_credentials()
-        test_credentials = Credentials('Twitter', 'Brad', '12345')
+        test_credentials = Credentials('Insta', 'Brad', '12345')
         test_credentials.save_credentials()
         self.assertEqual(len(Credentials.credentials_list), 2)
 
@@ -58,7 +58,7 @@ class Tests(unittest.TestCase):
         '''
 
         self.new_credentials.save_credentials()
-        test_credentials = Credentials('Twitter', 'Brad', '12345')
+        test_credentials = Credentials('Insta', 'Brad', '12345')
         test_credentials.save_credentials()
 
         self.new_credentials.delete_credentials()

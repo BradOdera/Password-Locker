@@ -1,6 +1,6 @@
 import random
 import string
-
+from credentials import Credentials
 
 class User:
     """

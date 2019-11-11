@@ -26,3 +26,19 @@ def create_credentials(account, username, password):
 
     new_credentials = Credentials(account, username, password)
     return new_credentials
+
+
+def display_credentials(username):
+    """
+    function that returns all the saved contacts
+    """
+
+    return Credentials.display_credentials()
+
+
+def save_credentials(self):
+    """
+    function that saves user credentials
+    """
+
+    Credentials.save_credentials(self)

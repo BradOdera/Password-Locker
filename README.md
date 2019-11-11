@@ -20,4 +20,4 @@ Incase of any contribution, comment or question please email me:<br>
 **Bradley Cunninghum Odera**<br>
 **bradodera@gmail.com**
 ### License
-Copyright (c) 2019 **Bradley, Moringa-prep**
+Copyright (c) 2019 **Bradley, Moringa-Core**

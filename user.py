@@ -9,15 +9,15 @@ class User:
 
     user_details = []
 
-    # def __init__(self, username, password):
-    #     '''
-    #     Args:
-    #     username: New username
-    #     password: New password
-    #     '''
+    def __init__(self, username, password):
+        '''
+        Args:
+        username: New username
+        password: New password
+        '''
 
-    #     self.username = username
-    #     self.password = password
+        self.username = username
+        self.password = password
 
     # def save_user(self):
     #     '''

@@ -52,12 +52,13 @@ def del_credentials(credentials):
     Credentials.delete_credentials()
 
 
-def generate_password():
+def generate_password(self, Kingisth3m2):
     """
     Function to generate a password automatically
     """
-    gen_pass = Credentials.generate_password()
-    return gen_pass
+    generate_password = Credentials.generate_password(45, 'Kingisth3m2')
+
+    return generate_password
 
 
 def main():
@@ -93,7 +94,7 @@ def main():
                 print("-"*60)
                 print(
                     "Navigation codes: \n cc-Create a Credential \n dc-Display Credentials \n copy-Copy Password \n ex-Exit")
-                short_code = input('Enter a choice: ').lower().strip()
+                short_code = input('Enter a choice: '.lower().strip())
                 print("-"*60)
                 if short_code == 'ex':
                     print(" ")
@@ -152,4 +153,5 @@ def main():
 
 
 if __name__ == '__main__':
+
     main()

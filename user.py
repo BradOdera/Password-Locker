@@ -19,11 +19,11 @@ class User:
         self.username = username
         self.password = password
 
-    # def save_user(self):
-    #     '''
-    #     saves user details into user details.
-    #     '''
-    #     User.user_details.append(self)
+    def save_user(self):
+        '''
+        saves user details into user details.
+        '''
+        User.user_details.append(self)
 
     # @classmethod
     # def user_detail(cls):

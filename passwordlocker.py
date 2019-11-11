@@ -42,3 +42,19 @@ def save_credentials(self):
     """
 
     Credentials.save_credentials(self)
+
+
+def del_credentials(credentials):
+    """
+    function to delete credentials
+    """
+
+    Credentials.delete_credentials()
+
+
+def generate_password():
+    """
+    Function to generate a password automatically
+    """
+    gen_pass = Credentials.generate_password()
+    return gen_pass
